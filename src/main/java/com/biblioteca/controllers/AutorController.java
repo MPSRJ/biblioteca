@@ -6,23 +6,26 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.biblioteca.repository.Livros;
+import com.biblioteca.repository.Autores;
 
 @Controller
-@RequestMapping("/")
-public class HomeController {
+@RequestMapping("/autores")
+public class AutorController {
 
 	@Autowired
-	private Livros livros;
-
+	private Autores autores;
+	
+	
+	
 	@GetMapping
-	public ModelAndView inicio() {
+	public ModelAndView listar(){
+		ModelAndView mv = new ModelAndView("autores/CadastroAutor");
+		
+		mv.addObject("autores", autores.findAll());
 
-		ModelAndView mv = new ModelAndView("HomePage");
-
-		mv.addObject("livros", livros.findAll());
-
+		
 		return mv;
+		
+		
 	}
-
 }
