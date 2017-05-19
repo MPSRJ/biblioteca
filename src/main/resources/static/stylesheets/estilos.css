@@ -1,3 +1,50 @@
 footer{
 	text-align: center;
 }
+
+.tabela-livros-col--codigo {
+	
+	width: 10%;
+	
+	text-align: center;
+}
+
+.tabela-livros-col--livro {
+	width: auto;
+}
+
+.tabela-livros-col--autor {
+	width: 30%;
+}
+
+.tabela-relacao-autores--codigo {
+	
+	width: 10%;
+	
+	text-align: center;
+}
+
+.tabela-relacao-autores--nome {
+	
+	width: auto;
+	
+}
+
+
+
+.form-cadastro label  {
+
+	padding: 10px;
+	
+}
+
+.form-cadastro input {
+	
+	margin: 10px;
+	width: 50%;
+}
+
+.form-cadastro button {
+	
+	margin: 10px;
+}
