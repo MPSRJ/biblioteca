@@ -31,10 +31,13 @@
     
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-	    <div layout:fragment="content"></div>
+    	<div class="container">
+	    	<div layout:fragment="content"></div>
       
-    	<hr>
+    	</div>
 
+	<hr>
+	
 	<div th:replace="layout/fragments/rodape :: footer"></div>
 	       
     </div> <!-- /container -->
